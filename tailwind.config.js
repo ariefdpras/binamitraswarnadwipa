@@ -6,7 +6,7 @@ module.exports = {
     "blog_2.html",
     "blog_3.html",
     "sewa_&_jual.html",
-    "detailproduk.html",
+    "sumitomosh210.html",
     "sanysy215c.html",
   ],
   darkMode: "class",
