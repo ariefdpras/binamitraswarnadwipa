@@ -30,3 +30,53 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+@layer components {
+  .card-blog {
+    @apply bg-slate-100 outline rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-dark transition ease-in-out duration-500;
+  }
+
+  .title-blog {
+    @apply block mb-3 font-semibold text-xl text-dark hover:text-slate-400 dark:text-neutral-300;
+  }
+
+  .detail-post {
+    @apply text-xs text-dark flex gap-1 items-end dark:text-white;
+  }
+
+  .content-blog {
+    @apply font-medium text-base text-secondary mt-4 mb-6 dark:text-neutral-400;
+  }
+
+  .button-details-blog {
+    @apply font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80;
+  }
+
+  .card-selling {
+    @apply bg-gray-100 text-gray-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden;
+  }
+
+  .badge {
+    @apply px-3 py-1 rounded-full font-semibold text-xs bg-gray-100;
+  }
+
+  .product-title {
+    @apply font-semibold text-xl overflow-ellipsis overflow-hidden whitespace-nowrap;
+  }
+
+  .discount-percent {
+    @apply bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white;
+  }
+
+  .button-primary {
+    @apply bg-primary hover:bg-yellow-500/90 px-7 py-2 rounded-md text-sm text-white font-medium tracking-wider transition;
+  }
+
+  .button-admin {
+    @apply flex-grow flex justify-center opacity-50 hover:opacity-100 items-center bg-gray-400/60 hover:bg-gray-400/80 transition rounded-md;
+  }
+
+  .tag-fungsi {
+    @apply text-xs ml-2 p-1 font-semibold text-gray-500 bg-yellow-300 rounded-md;
+  }
+}
